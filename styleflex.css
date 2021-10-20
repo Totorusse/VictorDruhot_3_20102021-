@@ -1,0 +1,601 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+/* début du header*/
+
+.logo {
+  height: 50px;
+}
+
+.reservia {
+  display: inline-block;
+  width: 0;
+  padding: 20px 20px;
+}
+
+.navigphone {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.navig a {
+  font-weight: 600;
+}
+
+.ligneheber {
+  display: inline-block;
+  border-bottom: solid rgb(0, 101, 252, 1);
+  width: 50%;
+  padding: 40px 0px 15px;
+  text-align: center;
+}
+
+.ligneact {
+  display: inline-block;
+  border-bottom: solid rgb(242, 242, 242, 1);
+  width: 50%;
+  margin-left: -5px;
+  padding: 40px 0px 15px;
+  text-align: center;
+}
+
+.mainnavig {
+  margin-top: 1px;
+}
+
+.navigdesk {
+  display: inline-block;
+  text-align: right;
+  width: 80%;
+}
+
+.ligneheberdesk {
+  border-top: solid rgb(0, 101, 252, 1);
+}
+
+.ligneactdesk,
+.ligneheberdesk,
+.inscriptiondesk {
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.inscriptionphone {
+  float: right;
+  padding: 40px 40px;
+}
+
+.login,
+.lienheber {
+  color: #0065fc;
+}
+
+.navigdesk {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .navigphone,
+  .inscriptionphone {
+    display: none;
+  }
+  .navigdesk {
+    display: block;
+    float: right;
+    padding-right: 40px;
+  }
+  .reservia {
+    padding-left: 40px;
+  }
+}
+
+/* Fin du header*/
+/* début du main*/
+/* début de la partie recherche*/
+
+.recherche {
+  padding-left: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .recherche {
+    padding: 20px 0 0 40px;
+  }
+}
+
+.texte1 {
+  margin: -5px 0 25px 0;
+}
+
+.filtres {
+  margin-top: 25px;
+}
+
+.formulaire {
+  padding: 20px 0;
+  border: solid 2px rgb(242, 242, 242, 1);
+  border-radius: 20px;
+  display: inline;
+  margin-bottom: 20px;
+}
+
+.pinlabel {
+  padding: 20px;
+  background-color: rgb(242, 242, 242, 1);
+  border-radius: 20px 0 0 20px;
+}
+
+.pinlabel i {
+  color: black;
+  font-size: 20px;
+}
+
+input[type="text"] {
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  padding: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.bouton1 {
+  padding: 20px;
+  width: 62px;
+  background-color: rgb(0, 101, 252, 1);
+  border-radius: 20px;
+  border: 1px solid #0065fc;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.bouton2 {
+  padding: 18px;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: rgb(0, 101, 252, 1);
+  border-radius: 0 20px 20px 0;
+  border: 1px solid #0065fc;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+form i {
+  color: white;
+  font-size: 20px;
+}
+
+.bouton2 {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  /* le titre filtre passe à gauche */
+  .titrefiltre {
+    float: left;
+    margin-right: 20px;
+    padding-top: 5px;
+  }
+  /* changement du bouton loupe en texte "recherche" */
+  .bouton1 {
+    display: none;
+  }
+  .bouton2 {
+    display: inline-block;
+  }
+}
+
+input[placeholder] {
+  font-weight: 700;
+  color: rgb(0, 0, 0, 1);
+}
+
+.filtres button {
+  font-weight: 700;
+  border: 2px solid #ccc;
+  border-radius: 100px;
+  font-size: 16px;
+  margin: 0px 5px 5px 0px;
+  background-image: url("roundback.png");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 20px 20px 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+button i {
+  margin-right: 28px;
+}
+
+i {
+  color: rgb(0, 101, 252, 1);
+}
+
+.fa-child {
+  padding-left: 5px;
+}
+
+.fa-heart {
+  padding-left: 3px;
+}
+
+.fa-dog {
+  padding-left: 2px;
+}
+
+.fa-info {
+  font-size: 12px;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  float: left;
+}
+
+.texte2 {
+  margin: 15px 0;
+}
+
+/* Fin de la partie recherche*/
+/* début du bloc populaire et hébergement*/
+
+.popetheb {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.popbloc {
+  width: 100%;
+  background-color: rgb(242, 242, 242, 1);
+  padding: 20px 30px;
+}
+.pop {
+  padding-top: 10px;
+}
+.poplabel {
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 35px;
+  height: 150px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.poplabel p {
+  margin-top: -10px;
+}
+
+.poplabel .text {
+  padding-top: 5px;
+  height: 75%;
+}
+
+.pop img {
+  height: 140px;
+  width: 40%;
+  float: left;
+  object-fit: cover;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.heb img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+.hebbloc {
+  background-color: white;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.heblabel {
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  height: 220px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hebbas,
+.hebhaut {
+  width: 100%;
+}
+
+.heb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textheblabel {
+  height: 45%;
+  margin: -20px 0px 0px 20px;
+}
+
+.textpoplabel {
+  height: 100%;
+}
+
+.textheblabel p {
+  margin: -15px 0px 15px 0px;
+}
+
+.fa-fire {
+  color: black;
+  float: right;
+  position: relative;
+  top: 25px;
+  font-size: 22px;
+}
+
+.etoile {
+  font-size: 14px;
+}
+
+.fa-star {
+  margin-right: 1px;
+}
+
+.greystar {
+  color: rgb(100, 100, 100, 0.2);
+}
+
+@media screen and (min-width: 600px) {
+  .popetheb {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 40px;
+  }
+  .popbloc {
+    width: 50%;
+    max-width: 320px;
+    height: max-content;
+    border-radius: 20px;
+    margin-left: 10px;
+  }
+  .hebbloc {
+    width: 50%;
+    background-color: rgb(242, 242, 242, 1);
+    border-radius: 20px;
+  }
+  .poplabel,
+  .heblabel {
+    width: 100%;
+    overflow: hidden;
+  }
+  .hebbas {
+    display: none;
+  }
+  .poplabel h3,
+  p {
+    font-size: min(17px, 2vw);
+  }
+  .heblabel h3,
+  p {
+    font-size: min(17px, 2vw);
+  }
+  .poplabel i {
+    font-size: min(14px, 1.5vw);
+  }
+  .heblabel i {
+    font-size: min(14px, 1.5vw);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hebbloc {
+    width: 75%;
+    padding: 20px 0 20px 30px;
+  }
+  .popbloc {
+    max-width: 350px;
+    width: 25%;
+  }
+
+  .blocetiquetteheb {
+    width: 100%;
+    margin-right: 20px;
+  }
+  .hebhaut {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .hebbas {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .heblabel {
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+  }
+  .popabel {
+    overflow: hidden;
+  }
+  .poplabel h3,
+  p {
+    font-size: min(17px, 1.2vw);
+  }
+  .heblabel h3,
+  p {
+    font-size: min(17px, 1.2vw);
+  }
+  .poplabel i {
+    font-size: min(14px, 1.5vw);
+  }
+  .heblabel i {
+    font-size: min(14px, 1.5vw);
+  }
+}
+
+.afficher {
+  border: none;
+  font-size: 20px;
+  background: none;
+  margin-top: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Fin du bloc populaire et hébergement*/
+/* début du bloc activités*/
+
+.activites {
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
+
+.act h3 {
+  margin: 15px 0px 0px 25px;
+}
+
+.act img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.biglabel,
+.smalllabel {
+  box-sizing: border-box;
+  height: max-content;
+  width: 100%;
+}
+
+.bigcard,
+.fortcard,
+.ilescard,
+.damecard,
+.parccard {
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 200px;
+  background-color: white;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 600px) {
+  .activites {
+    padding: 0 40px;
+  }
+  .act {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+  }
+  .biglabel,
+  .smalllabel {
+    width: 25%;
+    max-width: 350px;
+  }
+
+  .bigcard,
+  .fortcard,
+  .ilescard {
+    margin-right: 15px;
+    overflow: hidden;
+  }
+  .damecard,
+  .parccard {
+    overflow: hidden;
+  }
+  .bigcard {
+    height: 410px;
+  }
+  .bigcard img {
+    height: 80%;
+  }
+  .act h3 {
+    margin: 5px 0px 0px 15px;
+  }
+}
+
+/* Fin du bloc activité*/
+/* début du bloc footer*/
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(242, 242, 242, 1);
+}
+
+.foot {
+  width: 375px;
+  margin-bottom: 10px;
+  padding: 20px 30px;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 0px 0px 10px 0px;
+}
+
+footer ul {
+  margin: 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+footer a {
+  font-weight: 400;
+}
+
+@media screen and (min-width: 600px) {
+  .foot {
+    padding-left: 40px;
+  }
+}
