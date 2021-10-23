@@ -1,14 +1,9 @@
-.header {
-  background: $colour-primary;
-  height: 10rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+header {
   width: 100%;
-  &__logo {
-    font-size: 7rem;
-    color: $colour-secondary;
-    margin-left: 10rem;
-    @include heading-shadow($colour-white);
+  height: 150px;
+  text-align: center;
+  padding: 40px;
+  img {
+    height: 50px;
   }
 }
