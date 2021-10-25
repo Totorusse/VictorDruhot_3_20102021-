@@ -1,7 +1,19 @@
 @mixin gradient {
-    background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+  background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+  color: white;
 }
 
 @mixin shadow {
-     box-shadow: 0px 1px 5px grey;
+  box-shadow: 0px 1px 5px grey;
+}
+
+@mixin btn {
+  height: 50px;
+  padding: 10px 20px;
+  border: none;
+}
+
+@mixin center {
+  text-align: center;
+  padding: 20px 0;
 }

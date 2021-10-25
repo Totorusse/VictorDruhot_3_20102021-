@@ -1,7 +1,7 @@
 .recherche {
-  text-align: center;
+  @include center;
   width: 100%;
-  background: rgb(201, 201, 201, 0.5);
+  background: $gris;
 }
 
 input[type] {

@@ -14,17 +14,21 @@ body {
   width: 10%;
 }
 
-.btn {
+.bouton-explorer {
+  text-align: center;
+  padding: 20px 0;
+}
+.bouton-explorer__btn {
   height: 50px;
   padding: 10px 20px;
   border: none;
   box-shadow: 0px 1px 5px grey;
 }
-.btn--gradient {
-  color: white;
+.bouton-explorer__btn--gradient {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  color: white;
 }
-.btn--round {
+.bouton-explorer__btn--round {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
@@ -44,6 +48,7 @@ header img {
 
 .recherche {
   text-align: center;
+  padding: 20px 0;
   width: 100%;
   background: rgba(201, 201, 201, 0.5);
 }
