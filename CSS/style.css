@@ -14,12 +14,35 @@ body {
   width: 10%;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: "shrikhand", sans-serif;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
 .bouton-explorer {
   text-align: center;
   padding: 20px 0;
 }
 .bouton-explorer__btn {
-  height: 50px;
+  height: 45px;
   padding: 10px 20px;
   border: none;
   box-shadow: 0px 1px 5px grey;
@@ -36,30 +59,187 @@ body {
   -o-border-radius: 25px;
 }
 
-header {
+.header {
   width: 100%;
-  height: 150px;
+  height: 70px;
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
-header img {
-  height: 50px;
+.header img {
+  height: 30px;
+}
+.header__logo-index--shadow {
+  box-shadow: 0 4px 2px rgba(201, 201, 201, 0.4);
+}
+
+.explore {
+  background: rgba(201, 201, 201, 0.1);
+  text-align: center;
+  padding: 20px 0;
+  padding: 30px;
+}
+.explore__titre {
+  padding-bottom: 40px;
+}
+
+.fonctionnement {
+  padding: 40px 15px;
+}
+.fonctionnement__titre {
+  padding-bottom: 40px;
+}
+
+.restaurant {
+  padding: 40px 15px;
+}
+.restaurant__titre {
+  padding-bottom: 40px;
+}
+
+.fonctionnement-etiquette1 {
+  background: rgba(239, 239, 239, 0.4);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  margin: 15px;
+}
+.fonctionnement-etiquette1__number {
+  display: inline-block;
+  background: #9356dc;
+  position: absolute;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  color: white;
+  font-weight: 400;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.fonctionnement-etiquette1__icon {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  color: grey;
+  font-size: 22px;
+}
+.fonctionnement-etiquette1__text {
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.fonctionnement-etiquette2 {
+  background: rgba(227, 227, 227, 0.4);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  margin: 15px;
+}
+.fonctionnement-etiquette2__number {
+  display: inline-block;
+  background: #9356dc;
+  position: absolute;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  color: white;
+  font-weight: 400;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.fonctionnement-etiquette2__icon {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  color: grey;
+  font-size: 22px;
+}
+.fonctionnement-etiquette2__text {
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.fonctionnement-etiquette3 {
+  background: #f2eafb;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  margin: 15px;
+}
+.fonctionnement-etiquette3__number {
+  display: inline-block;
+  background: #9356dc;
+  position: absolute;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  color: white;
+  font-weight: 400;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.fonctionnement-etiquette3__icon {
+  display: inline-block;
+  position: absolute;
+  left: 70px;
+  color: #9356dc;
+  font-size: 22px;
+}
+.fonctionnement-etiquette3__text {
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: 600;
+  margin-left: 20px;
 }
 
 .recherche {
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  background: rgba(201, 201, 201, 0.5);
+  background: rgba(201, 201, 201, 0.4);
+}
+.recherche__pin {
+  padding-left: 20px;
 }
 
 input[type] {
   border: none;
   background: none;
+  padding-left: 10px;
 }
 
 input[placeholder] {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

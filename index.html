@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;600&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/3ec3680ae0.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
-    <header>
+    <header class="header header__logo-index--shadow">
       <img src="images/logo/ohmyfood.png" alt="logo" />
     </header>
 
@@ -24,15 +24,15 @@
       <!--Début du main : englobe tout sauf header et footer-->
 
       <form class="recherche">
-        <label class="recherche__pin--black"><i class="fas fa-map-marker-alt"></i></label>
+        <label class="recherche__pin"><i class="fas fa-map-marker-alt"></i></label>
         <input type="text" id="ville" placeholder="Paris, Belleville" />
       </form>
 
       <!--FIN de la partie recherche-->
 
       <div class="explore">
-        <h1>Réserver le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+        <h2 class="explore__titre">Réserver le menu qui vous convient</h2>
+        <p class="explore__texte">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
         <div class="bouton-explorer">
           <button class="bouton-explorer__btn bouton-explorer__btn--round bouton-explorer__btn--gradient">
             Explorer nos restaurants
@@ -44,29 +44,33 @@
       <!--Début de la partie fonctionnement-->
 
       <section class="fonctionnement">
-        <h2>Fonctionnement</h2>
+        <h2 class="fonctionnement__titre">Fonctionnement</h2>
 
-        <div class="etiquette">
-          <span class="number">1</span><span class="icon"><i class="fas fa-mobile-alt"></i></span
-          ><span>Choisissez un restaurant</span>
+        <div class="fonctionnement-etiquette1">
+          <div class="fonctionnement-etiquette1__number">1</div>
+          <div class="fonctionnement-etiquette1__icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="fonctionnement-etiquette1__text">Choisissez un restaurant</div>
         </div>
 
-        <div class="etiquette">
-          <span class="number">2</span
-          ><span class="icon"><i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i></span
-          ><span>Composez votre menu</span>
+        <div class="fonctionnement-etiquette2">
+          <div class="fonctionnement-etiquette2__number">2</div>
+          <div class="fonctionnement-etiquette2__icon">
+            <i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>
+          </div>
+          <div class="fonctionnement-etiquette2__text">Composez votre menu</div>
         </div>
 
-        <div class="etiquette">
-          <span class="number">3</span><span class="icon"><i class="fas fa-store"></i></span
-          ><span>Dégustez au restaurant</span>
+        <div class="fonctionnement-etiquette3">
+          <div class="fonctionnement-etiquette3__number">3</div>
+          <div class="fonctionnement-etiquette3__icon"><i class="fas fa-store"></i></div>
+          <div class="fonctionnement-etiquette3__text">Dégustez au restaurant</div>
         </div>
       </section>
       <!--FIN de la partie fonctionnement-->
       <!--Début de la partie restaurant-->
 
       <section class="restaurant">
-        <h2>Restaurant</h2>
+        <h2 class="restaurant__titre">Restaurants</h2>
 
         <a href="palette.html">
           <div class="etiquette_resto">

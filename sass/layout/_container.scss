@@ -1,0 +1,62 @@
+.explore {
+  background: $gris-light;
+  @include center;
+  padding: 30px;
+  &__titre {
+    @include padding-titre;
+  }
+}
+
+.fonctionnement {
+  @include padding-bloc;
+  &__titre {
+    @include padding-titre;
+  }
+}
+
+.restaurant {
+  @include padding-bloc;
+  &__titre {
+    @include padding-titre;
+  }
+}
+
+.fonctionnement-etiquette1 {
+  @include fonctionnement-etiquette($color: $gris-dark, $percent: 15%);
+  &__number {
+    @include fonctionnement-etiquette__number--violet;
+  }
+  &__icon {
+    @include fonctionnement-etiquette__icon;
+  }
+  &__text {
+    @include fonctionnement-etiquette__text;
+  }
+}
+
+.fonctionnement-etiquette2 {
+  @include fonctionnement-etiquette($color: $gris-dark, $percent: 10%);
+  &__number {
+    @include fonctionnement-etiquette__number--violet;
+  }
+  &__icon {
+    @include fonctionnement-etiquette__icon;
+  }
+  &__text {
+    @include fonctionnement-etiquette__text;
+  }
+}
+
+.fonctionnement-etiquette3 {
+  @include fonctionnement-etiquette($color: $primary-color, $percent: 35%);
+
+  &__number {
+    @include fonctionnement-etiquette__number--violet;
+  }
+  &__icon {
+    @include fonctionnement-etiquette__icon($color: $primary-color);
+  }
+  &__text {
+    @include fonctionnement-etiquette__text;
+  }
+}

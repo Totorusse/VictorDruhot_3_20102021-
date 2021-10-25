@@ -8,7 +8,7 @@
 }
 
 @mixin btn {
-  height: 50px;
+  height: 45px;
   padding: 10px 20px;
   border: none;
 }
@@ -16,4 +16,59 @@
 @mixin center {
   text-align: center;
   padding: 20px 0;
+}
+
+@mixin padding-bloc {
+  padding: 40px 15px;
+}
+
+@mixin padding-titre {
+  padding-bottom: 40px;
+}
+
+@mixin fonctionnement-etiquette($color: $gris-light, $percent:95%) {
+  background: lighten($color, $percent);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 2px 2px 8px $gris-dark;
+  margin: 15px;
+}
+
+@mixin fonctionnement-etiquette__number--violet {
+  display: inline-block;
+  background: $primary-color;
+  position: absolute;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  padding-top: 4px;
+  color: white;
+  font-weight: 400;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@mixin fonctionnement-etiquette__icon($color: grey) {
+  display: inline-block;
+    position: absolute;
+  left: 70px;
+  color: $color;
+  font-size: 22px;
+
+}
+
+@mixin fonctionnement-etiquette__text {
+  display: inline-block;
+    padding-top: 4px;
+    font-weight: 600;
+    margin-left: 20px;
+
 }

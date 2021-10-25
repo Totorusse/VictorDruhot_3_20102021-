@@ -1,14 +1,16 @@
 .recherche {
   @include center;
   width: 100%;
-  background: $gris;
+  background: $gris-dark;
+  &__pin{padding-left: 20px;}
 }
 
 input[type] {
   border: none;
   background: none;
+  padding-left: 10px;
 }
 
 input[placeholder] {
-  font-size: 16px;
+  font-size: 18px;
 }
