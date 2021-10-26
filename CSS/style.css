@@ -10,10 +10,6 @@ body {
   box-sizing: border-box;
 }
 
-.main img {
-  width: 10%;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -89,13 +85,6 @@ button {
   padding-bottom: 40px;
 }
 
-.restaurant {
-  padding: 40px 15px;
-}
-.restaurant__titre {
-  padding-bottom: 40px;
-}
-
 .fonctionnement-etiquette1 {
   background: rgba(239, 239, 239, 0.4);
   border-radius: 20px;
@@ -107,6 +96,7 @@ button {
   padding: 25px 0;
   box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
   margin: 15px;
+  max-width: 450px;
 }
 .fonctionnement-etiquette1__number {
   display: inline-block;
@@ -149,6 +139,7 @@ button {
   padding: 25px 0;
   box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
   margin: 15px;
+  max-width: 450px;
 }
 .fonctionnement-etiquette2__number {
   display: inline-block;
@@ -191,6 +182,7 @@ button {
   padding: 25px 0;
   box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
   margin: 15px;
+  max-width: 450px;
 }
 .fonctionnement-etiquette3__number {
   display: inline-block;
@@ -220,6 +212,59 @@ button {
   padding-top: 4px;
   font-weight: 600;
   margin-left: 20px;
+}
+
+.restaurant {
+  padding: 40px 15px;
+  background: rgba(201, 201, 201, 0.1);
+}
+.restaurant__titre {
+  padding-bottom: 40px;
+}
+.restaurant__lien {
+  color: black;
+  text-decoration: none;
+}
+.restaurant__etiquette {
+  position: relative;
+  background: white;
+  max-width: 450px;
+  height: 250px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+}
+.restaurant__image {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  -ms-border-radius: 20px 20px 0 0;
+  -o-border-radius: 20px 20px 0 0;
+}
+.restaurant__nouveau {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #2c9c81;
+  font-weight: 600;
+  background-color: #99e2d0;
+  padding: 6px;
+}
+.restaurant__text {
+  padding: 10px 15px;
+  line-height: 25px;
+}
+.restaurant__coeur {
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  font-size: 25px;
 }
 
 .recherche {
