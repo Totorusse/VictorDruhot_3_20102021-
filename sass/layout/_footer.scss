@@ -1,0 +1,26 @@
+.footer {
+  padding: 20px;
+  color: white;
+  background-color: lighten(black, 15);
+  &__titre {
+    margin-bottom: 10px;
+  }
+  &__list {
+    list-style-type: none;
+    line-height: 25px;
+    font-weight: 400;
+    &__couverts {
+      width: 25px;
+      padding-right: 15px;
+    }
+    &__mains {
+      font-size: 12px;
+      width: 25px;
+      padding-right: 15px;
+    }
+    &__lien {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}

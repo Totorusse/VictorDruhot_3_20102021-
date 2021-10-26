@@ -15,3 +15,13 @@
     }
   }
 }
+
+.header__bouton-retour {
+  @include btn;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+}

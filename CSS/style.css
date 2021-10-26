@@ -33,6 +33,11 @@ button {
   font-weight: 400;
 }
 
+footer h2 {
+  font-family: "shrikhand";
+  font-weight: 100;
+}
+
 .bouton-explorer {
   text-align: center;
   padding: 20px 0;
@@ -53,6 +58,18 @@ button {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+.header__bouton-retour {
+  height: 45px;
+  padding: 10px 20px;
+  border: none;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
 }
 
 .header {
@@ -267,6 +284,15 @@ button {
   font-size: 25px;
 }
 
+.main__image {
+  width: 100%;
+  height: 250px;
+}
+
+.menu {
+  padding: 40px 15px;
+}
+
 .recherche {
   text-align: center;
   padding: 20px 0;
@@ -285,6 +311,33 @@ input[type] {
 
 input[placeholder] {
   font-size: 18px;
+}
+
+.footer {
+  padding: 20px;
+  color: white;
+  background-color: #262626;
+}
+.footer__titre {
+  margin-bottom: 10px;
+}
+.footer__list {
+  list-style-type: none;
+  line-height: 25px;
+  font-weight: 400;
+}
+.footer__list__couverts {
+  width: 25px;
+  padding-right: 15px;
+}
+.footer__list__mains {
+  font-size: 12px;
+  width: 25px;
+  padding-right: 15px;
+}
+.footer__list__lien {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

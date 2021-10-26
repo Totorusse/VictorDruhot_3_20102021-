@@ -19,13 +19,13 @@
   <body>
     <header class="header">
       <a href="index.html"
-        ><button class="btn btn__retour"><i class="fas fa-arrow-left"></i></button
+        ><button class="header__bouton-retour"><i class="fas fa-arrow-left"></i></button
       ></a>
       <img src="images/logo/ohmyfood.png" alt="logo" />
     </header>
 
     <div class="main">
-      <img src="images/restaurants/palette.jpg" alt="image" />
+      <img class="main__image" src="images/restaurants/palette.jpg" alt="image" />
       <div class="menu">
         <h1>
           La palette du goût<span><i class="far fa-heart"></i></span>
@@ -86,13 +86,15 @@
     </div>
     <!--FIN du main-->
 
-    <footer>
-      <img src="images/logo/ohmyfood.png" alt="logo" />
-      <ul>
-        <li class="couverts"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
-        <li class="partenaire"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li class="sans_puce">Mentions légales</li>
-        <li class="sans_puce"><a href="mailto:serviceclient@gmail.com" target="_blank">Contact</a></li>
+    <footer class="footer">
+      <h2 class="footer__titre">ohmyfood</h2>
+      <ul class="footer__list">
+        <li><i class="footer__list__couverts fas fa-utensils"></i>Proposer un restaurant</li>
+        <li><i class="footer__list__mains fas fa-hands-helping"></i>Devenir partenaire</li>
+        <li class="footer__list-sans-puce">Mentions légales</li>
+        <li class="footer__list-sans-puce">
+          <a class="footer__list__lien" href="mailto:serviceclient@gmail.com" target="_blank">Contact</a>
+        </li>
       </ul>
     </footer>
   </body>
