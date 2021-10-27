@@ -16,7 +16,7 @@
 }
 
 .fonctionnement-etiquette1 {
-  @include fonctionnement-etiquette($color: $gris-dark, $percent: 15%);
+  @include fonctionnement-etiquette($color: $gris-dark, $percent: 3%);
   &__number {
     @include fonctionnement-etiquette__number--violet;
   }
@@ -29,7 +29,7 @@
 }
 
 .fonctionnement-etiquette2 {
-  @include fonctionnement-etiquette($color: $gris-dark, $percent: 10%);
+  @include fonctionnement-etiquette($color: $gris-dark, $percent: 5%);
   &__number {
     @include fonctionnement-etiquette__number--violet;
   }
@@ -68,6 +68,7 @@
     @include restaurant-etiquette;
   }
   &__image {
+    object-fit: cover;
     width: 100%;
     height: 70%;
     border-radius: 20px 20px 0 0;
@@ -75,6 +76,15 @@
     -moz-border-radius: 20px 20px 0 0;
     -ms-border-radius: 20px 20px 0 0;
     -o-border-radius: 20px 20px 0 0;
+  }
+  &__image--position1{
+    object-position: 0 -50px;
+  }  &__image--position2{
+    object-position: 0 -160px;
+  }  &__image--position3{
+    object-position: 0 -50px;
+  }  &__image--position4{
+    object-position: 0 -60px;
   }
   &__nouveau {
     position: absolute;
@@ -128,13 +138,18 @@
   &__prix {
     position: absolute;
     right: 15px;
+    top: 45px;
     font-weight: bold;
   }
+  &__text {
+width: 80%; 
+height: 30px;
+overflow: hidden; }
 }
 
 .titre__underline {
   background-color: $tertiary-color;
-  height: 5px;
+  height: 4px;
   width: 40px;
   margin: 3px 0 10px;
 }
