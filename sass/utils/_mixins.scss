@@ -90,3 +90,19 @@
   -o-border-radius: 20px;
   box-shadow: 2px 2px 8px $gris-dark;
 }
+
+@mixin menu-etiquette {
+  position: relative;
+  background: white;
+  max-width: 450px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 4px 8px 4px $gris-dark;
+  padding: 15px 10px;
+  line-height: 30px;
+}

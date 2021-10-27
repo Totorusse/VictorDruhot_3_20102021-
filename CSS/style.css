@@ -38,26 +38,39 @@ footer h2 {
   font-weight: 100;
 }
 
-.bouton-explorer {
+.titre {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.bouton-explorer,
+.bouton-commander {
   text-align: center;
   padding: 20px 0;
 }
-.bouton-explorer__btn {
+.bouton-explorer__btn,
+.bouton-commander__btn {
   height: 45px;
   padding: 10px 20px;
   border: none;
   box-shadow: 0px 1px 5px grey;
 }
-.bouton-explorer__btn--gradient {
+.bouton-explorer__btn--gradient,
+.bouton-commander__btn--gradient {
   background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
   color: white;
 }
-.bouton-explorer__btn--round {
+.bouton-explorer__btn--round,
+.bouton-commander__btn--round {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+}
+
+.bouton-commander__btn {
+  width: 160px;
 }
 
 .header__bouton-retour {
@@ -82,11 +95,12 @@ footer h2 {
   height: 30px;
 }
 .header__logo-index--shadow {
-  box-shadow: 0 4px 2px rgba(201, 201, 201, 0.4);
+  box-shadow: 0px 4px 100px grey;
+  margin-bottom: 4px;
 }
 
 .explore {
-  background: rgba(201, 201, 201, 0.1);
+  background: #fafafa;
   text-align: center;
   padding: 20px 0;
   padding: 30px;
@@ -97,13 +111,14 @@ footer h2 {
 
 .fonctionnement {
   padding: 40px 15px;
+  background-color: white;
 }
 .fonctionnement__titre {
   padding-bottom: 40px;
 }
 
 .fonctionnement-etiquette1 {
-  background: rgba(239, 239, 239, 0.4);
+  background: white;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -111,7 +126,7 @@ footer h2 {
   -o-border-radius: 20px;
   text-align: center;
   padding: 25px 0;
-  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 2px 2px 8px #f0f0f0;
   margin: 15px;
   max-width: 450px;
 }
@@ -146,7 +161,7 @@ footer h2 {
 }
 
 .fonctionnement-etiquette2 {
-  background: rgba(227, 227, 227, 0.4);
+  background: white;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -154,7 +169,7 @@ footer h2 {
   -o-border-radius: 20px;
   text-align: center;
   padding: 25px 0;
-  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 2px 2px 8px #f0f0f0;
   margin: 15px;
   max-width: 450px;
 }
@@ -197,7 +212,7 @@ footer h2 {
   -o-border-radius: 20px;
   text-align: center;
   padding: 25px 0;
-  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 2px 2px 8px #f0f0f0;
   margin: 15px;
   max-width: 450px;
 }
@@ -233,7 +248,7 @@ footer h2 {
 
 .restaurant {
   padding: 40px 15px;
-  background: rgba(201, 201, 201, 0.1);
+  background: #fafafa;
 }
 .restaurant__titre {
   padding-bottom: 40px;
@@ -253,7 +268,7 @@ footer h2 {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  box-shadow: 2px 2px 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 2px 2px 8px #f0f0f0;
 }
 .restaurant__image {
   width: 100%;
@@ -284,20 +299,69 @@ footer h2 {
   font-size: 25px;
 }
 
+.main {
+  background-color: #fafafa;
+}
 .main__image {
   width: 100%;
   height: 250px;
 }
 
 .menu {
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  background-color: #fafafa;
+  position: relative;
+  bottom: 50px;
+  margin-bottom: -50px;
   padding: 40px 15px;
+}
+.menu__coeur {
+  position: absolute;
+  right: 25px;
+  top: 50px;
+  font-size: 25px;
+}
+.menu__etiquette {
+  position: relative;
+  background: white;
+  max-width: 450px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 4px 8px 4px #f0f0f0;
+  padding: 15px 10px;
+  line-height: 30px;
+}
+.menu__prix {
+  position: absolute;
+  right: 15px;
+  font-weight: bold;
+}
+
+.titre__underline {
+  background-color: #99e2d0;
+  height: 5px;
+  width: 40px;
+  margin: 3px 0 10px;
+}
+
+.entrees, .plats, .dessert {
+  margin-top: 30px;
 }
 
 .recherche {
   text-align: center;
   padding: 20px 0;
   width: 100%;
-  background: rgba(201, 201, 201, 0.4);
+  background: #f0f0f0;
 }
 .recherche__pin {
   padding-left: 20px;

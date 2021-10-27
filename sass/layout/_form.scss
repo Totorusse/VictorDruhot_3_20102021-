@@ -2,7 +2,9 @@
   @include center;
   width: 100%;
   background: $gris-dark;
-  &__pin{padding-left: 20px;}
+  &__pin {
+    padding-left: 20px;
+  }
 }
 
 input[type] {

@@ -1,4 +1,5 @@
-.bouton-explorer {
+.bouton-explorer,
+.bouton-commander {
   @include center;
   &__btn {
     @include btn;
@@ -14,6 +15,10 @@
       -o-border-radius: 25px;
     }
   }
+}
+
+.bouton-commander__btn {
+  width: 160px;
 }
 
 .header__bouton-retour {
