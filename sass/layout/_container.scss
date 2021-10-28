@@ -128,8 +128,11 @@
 .main {
   background-color: $gris-light;
   &__image {
+    display: block;
     width: 100%;
+    margin: auto;
     height: 250px;
+    max-width: 500px;
   }
 }
 
@@ -146,7 +149,7 @@
   @include padding-bloc;
   &__coeur {
     position: absolute;
-    right: 25px;
+    left: 400px;
     top: 50px;
     font-size: 25px;
   }
@@ -164,6 +167,9 @@
     height: 30px;
     overflow: hidden;
   }
+  &-flexbox{
+       @include flexbox;
+  }
 }
 
 .titre__underline {
@@ -175,6 +181,6 @@
 
 .entrees,
 .plats,
-.dessert {
+.desserts {
   margin-top: 30px;
 }

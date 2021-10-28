@@ -54,6 +54,7 @@ footer h2 {
   height: 45px;
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
   box-shadow: 0px 1px 5px grey;
 }
 .bouton-explorer__btn--gradient,
@@ -78,6 +79,7 @@ footer h2 {
   height: 45px;
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
   position: absolute;
   left: 20px;
   top: 10px;
@@ -279,7 +281,7 @@ footer h2 {
 .restaurant__etiquette {
   position: relative;
   background: white;
-  max-width: 450px;
+  max-width: 500px;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 20px;
@@ -351,8 +353,11 @@ footer h2 {
   background-color: #fafafa;
 }
 .main__image {
+  display: block;
   width: 100%;
+  margin: auto;
   height: 250px;
+  max-width: 500px;
 }
 
 .menu {
@@ -369,7 +374,7 @@ footer h2 {
 }
 .menu__coeur {
   position: absolute;
-  right: 25px;
+  left: 400px;
   top: 50px;
   font-size: 25px;
 }
@@ -399,6 +404,17 @@ footer h2 {
   height: 30px;
   overflow: hidden;
 }
+.menu-flexbox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .menu-flexbox {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
 .titre__underline {
   background-color: #99e2d0;
@@ -409,7 +425,7 @@ footer h2 {
 
 .entrees,
 .plats,
-.dessert {
+.desserts {
   margin-top: 30px;
 }
 

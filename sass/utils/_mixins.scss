@@ -11,6 +11,7 @@
   height: 45px;
   padding: 10px 20px;
   border: none;
+  cursor: pointer;
 }
 
 @mixin center {
@@ -79,7 +80,7 @@
 @mixin restaurant-etiquette {
   position: relative;
   background: white;
-  max-width: 450px;
+  max-width: 500px;
   height: 250px;
   margin-bottom: 20px;
   border-radius: 20px;
