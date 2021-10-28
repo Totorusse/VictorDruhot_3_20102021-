@@ -13,10 +13,16 @@
   &__titre {
     @include padding-titre;
   }
+  &__flexbox {
+    @include flexbox;
+  }
 }
 
 .fonctionnement-etiquette1 {
   @include fonctionnement-etiquette($color: $gris-dark, $percent: 3%);
+  &-contenu {
+    position: relative;
+  }
   &__number {
     @include fonctionnement-etiquette__number--violet;
   }
@@ -30,6 +36,9 @@
 
 .fonctionnement-etiquette2 {
   @include fonctionnement-etiquette($color: $gris-dark, $percent: 5%);
+  &-contenu {
+    position: relative;
+  }
   &__number {
     @include fonctionnement-etiquette__number--violet;
   }
@@ -43,6 +52,9 @@
 
 .fonctionnement-etiquette3 {
   @include fonctionnement-etiquette($color: $primary-color, $percent: 35%);
+  &-contenu {
+    position: relative;
+  }
 
   &__number {
     @include fonctionnement-etiquette__number--violet;
@@ -77,14 +89,17 @@
     -ms-border-radius: 20px 20px 0 0;
     -o-border-radius: 20px 20px 0 0;
   }
-  &__image--position1{
+  &__image--position1 {
     object-position: 0 -50px;
-  }  &__image--position2{
-    object-position: 0 -160px;
-  }  &__image--position3{
-    object-position: 0 -50px;
-  }  &__image--position4{
-    object-position: 0 -60px;
+  }
+  &__image--position2 {
+    object-position: 0 -200px;
+  }
+  &__image--position3 {
+    object-position: 0 -70px;
+  }
+  &__image--position4 {
+    object-position: 0 -80px;
   }
   &__nouveau {
     position: absolute;
@@ -104,6 +119,9 @@
     right: 25px;
     bottom: 30px;
     font-size: 25px;
+  }
+  &__flexbox {
+    @include flexbox;
   }
 }
 
@@ -142,9 +160,10 @@
     font-weight: bold;
   }
   &__text {
-width: 80%; 
-height: 30px;
-overflow: hidden; }
+    width: 80%;
+    height: 30px;
+    overflow: hidden;
+  }
 }
 
 .titre__underline {
@@ -154,6 +173,8 @@ overflow: hidden; }
   margin: 3px 0 10px;
 }
 
-.entrees, .plats, .dessert {
+.entrees,
+.plats,
+.dessert {
   margin-top: 30px;
 }
