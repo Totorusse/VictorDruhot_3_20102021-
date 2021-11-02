@@ -182,23 +182,20 @@
       }
     }
     &:not(:hover) {
-      .menu__test {
+      .menu--animation {
         animation: largeur--retour 500ms forwards;
         -webkit-animation: largeur--retour 500ms forwards;
       }
       .menu__prix {
         animation: position-prix--retour 500ms forwards;
         -webkit-animation: position-prix--retour 500ms forwards;
-}
+      }
     }
   }
   &__prix {
     position: absolute;
     top: 60%;
-    right: 10%;
-    width: 10%;
     font-weight: bold;
-    display: inline-block;
   }
   &__text {
     width: 80%;
@@ -210,6 +207,24 @@
 
   &-flexbox {
     @include flexbox;
+  }
+  &--apparition {
+    &1 {
+      animation: apparition 800ms linear;
+      -webkit-animation: apparition 800ms linear;
+}
+    &2 {
+      animation: apparition 800ms linear 100ms;
+      -webkit-animation: apparition 800ms linear 100ms;
+}
+    &3 {
+      animation: apparition 800ms linear 200ms;
+      -webkit-animation: apparition 800ms linear 200ms;
+}
+    &4 {
+      animation: apparition 800ms linear 300ms;
+      -webkit-animation: apparition 800ms linear 300ms;
+}
   }
 }
 

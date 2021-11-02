@@ -122,6 +122,7 @@
   padding: 15px 10px;
   line-height: 30px;
   cursor: pointer;
+
   @media screen and (min-width: 992px) {
     min-width: 300px;
   }
@@ -145,14 +146,14 @@
     width: 100%;
   }
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 
 @keyframes largeur--retour {
   //augmentation largeur etiquette au retour, sans survol
   from {
-    width: 60%;
+    width: 70%;
   }
   to {
     width: 100%;
@@ -160,21 +161,36 @@
 }
 
 @keyframes position-prix {
-  //déplacement position prix
+  //déplacement position prix au survol
   from {
-    right: 10%;
+    right: 5%;
   }
   to {
-    right: 31%;
+    right: 25%;
   }
 }
 
 @keyframes position-prix--retour {
   //retour position prix
   from {
-    right: 30%;
+    right: 25%;
   }
   to {
-    right: 10%;
+    right: 5%;
   }
 }
+
+@keyframes apparition {
+  //apparition etiquette menu
+  from {
+    opacity: 0.1;
+    transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -o-transform: translateY(25px);
+}
+  to {
+  }
+}
+

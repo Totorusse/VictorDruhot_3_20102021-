@@ -3,12 +3,12 @@
     width: 100%;
   }
   to {
-    width: 60%;
+    width: 70%;
   }
 }
 @keyframes largeur--retour {
   from {
-    width: 60%;
+    width: 70%;
   }
   to {
     width: 100%;
@@ -16,18 +16,28 @@
 }
 @keyframes position-prix {
   from {
-    right: 10%;
+    right: 5%;
   }
   to {
-    right: 31%;
+    right: 25%;
   }
 }
 @keyframes position-prix--retour {
   from {
-    right: 30%;
+    right: 25%;
   }
   to {
-    right: 10%;
+    right: 5%;
+  }
+}
+@keyframes apparition {
+  from {
+    opacity: 0.1;
+    transform: translateY(25px);
+    -webkit-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    -o-transform: translateY(25px);
   }
 }
 *,
@@ -130,7 +140,7 @@ footer h2 {
   right: 0;
   color: white;
   height: 100%;
-  width: 30%;
+  width: 20%;
   border-radius: 0 20px 20px 0;
   -webkit-border-radius: 0 20px 20px 0;
   -moz-border-radius: 0 20px 20px 0;
@@ -486,7 +496,7 @@ footer h2 {
   animation: position-prix 500ms forwards;
   -webkit-animation: position-prix 500ms forwards;
 }
-.menu__etiquette:not(:hover) .menu__test {
+.menu__etiquette:not(:hover) .menu--animation {
   animation: largeur--retour 500ms forwards;
   -webkit-animation: largeur--retour 500ms forwards;
 }
@@ -497,10 +507,7 @@ footer h2 {
 .menu__prix {
   position: absolute;
   top: 60%;
-  right: 10%;
-  width: 10%;
   font-weight: bold;
-  display: inline-block;
 }
 .menu__text {
   width: 80%;
@@ -519,6 +526,22 @@ footer h2 {
     flex-direction: row;
     justify-content: space-around;
   }
+}
+.menu--apparition1 {
+  animation: apparition 800ms linear;
+  -webkit-animation: apparition 800ms linear;
+}
+.menu--apparition2 {
+  animation: apparition 800ms linear 100ms;
+  -webkit-animation: apparition 800ms linear 100ms;
+}
+.menu--apparition3 {
+  animation: apparition 800ms linear 200ms;
+  -webkit-animation: apparition 800ms linear 200ms;
+}
+.menu--apparition4 {
+  animation: apparition 800ms linear 300ms;
+  -webkit-animation: apparition 800ms linear 300ms;
 }
 
 .titre__underline {
