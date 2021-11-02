@@ -1,13 +1,16 @@
 @mixin gradient {
+  //chgt couleur secondaire à primaire graduel
   background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
   color: white;
 }
 
 @mixin shadow {
+  //ombre pour différentes étiquettes
   box-shadow: 0px 1px 5px grey;
 }
 
 @mixin btn {
+  //hauteur et style standard pour bouton
   height: 45px;
   padding: 10px 20px;
   border: none;
@@ -15,19 +18,23 @@
 }
 
 @mixin center {
+  // pour centrer éléments
   text-align: center;
   padding: 20px 0;
 }
 
 @mixin padding-bloc {
+  //padding standard des blocs
   padding: 40px 15px;
 }
 
 @mixin padding-titre {
+  //padding standard des titres
   padding-bottom: 10px;
 }
 
 @mixin fonctionnement-etiquette($color: $gris-light, $percent: 95%) {
+  //style  etiquette
   background: lighten($color, $percent);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -41,6 +48,7 @@
 }
 
 @mixin fonctionnement-etiquette__number--violet {
+  //style  numéro à gauche
   display: inline-block;
   background: $primary-color;
   position: absolute;
@@ -58,6 +66,7 @@
 }
 
 @mixin fonctionnement-etiquette__icon($color: grey) {
+  //style  icône
   display: inline-block;
   position: absolute;
   left: 25px;
@@ -66,6 +75,7 @@
 }
 
 @mixin fonctionnement-etiquette__text {
+  //style  texte
   display: inline-block;
   padding-top: 4px;
   font-weight: 600;
@@ -73,11 +83,13 @@
 }
 
 @mixin lien--sans-decoration {
+  //style  des liens  retiré
   color: black;
   text-decoration: none;
 }
 
 @mixin restaurant-etiquette {
+  //style  etiquette restaurant
   position: relative;
   background: white;
   max-width: 500px;
@@ -95,6 +107,7 @@
 }
 
 @mixin menu-etiquette {
+  //style  etiquettes des menus
   position: relative;
   background: white;
   max-width: 450px;
@@ -108,9 +121,14 @@
   box-shadow: 4px 8px 4px $gris-dark;
   padding: 15px 10px;
   line-height: 30px;
+  cursor: pointer;
+  @media screen and (min-width: 992px) {
+    min-width: 300px;
+  }
 }
 
 @mixin flexbox {
+  //affichage en colonne du bloc pour petit écran et en ligne pour grand écran
   display: flex;
   flex-direction: column;
   position: relative;
@@ -118,5 +136,45 @@
   @media screen and (min-width: 992px) {
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+
+@keyframes largeur {
+  //réduction largeur etiquette au survol
+  from {
+    width: 100%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes largeur--retour {
+  //augmentation largeur etiquette au retour, sans survol
+  from {
+    width: 60%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes position-prix {
+  //déplacement position prix
+  from {
+    right: 10%;
+  }
+  to {
+    right: 31%;
+  }
+}
+
+@keyframes position-prix--retour {
+  //retour position prix
+  from {
+    right: 30%;
+  }
+  to {
+    right: 10%;
   }
 }
