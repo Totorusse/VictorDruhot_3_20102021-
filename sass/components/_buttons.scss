@@ -4,6 +4,10 @@
   &__btn {
     @include btn;
     @include shadow;
+    &:hover {
+      opacity: 0.8;
+        box-shadow: 0px 5px 5px grey;
+    }
     &--gradient {
       @include gradient;
     }

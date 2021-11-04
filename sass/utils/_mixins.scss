@@ -4,6 +4,11 @@
   color: white;
 }
 
+@mixin gradient-coeur {
+  //chgt couleur secondaire à primaire graduel de bas en haut
+  background-image: linear-gradient(to top, $secondary-color, $primary-color);
+}
+
 @mixin shadow {
   //ombre pour différentes étiquettes
   box-shadow: 0px 1px 5px grey;
@@ -189,8 +194,19 @@
     -moz-transform: translateY(25px);
     -ms-transform: translateY(25px);
     -o-transform: translateY(25px);
-}
+  }
   to {
   }
 }
 
+@keyframes remplissage-coeur {
+  //remplissage de coeur plein au survol
+  from {
+  }
+  to {
+    opacity: 1;
+    background: -webkit-linear-gradient($primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

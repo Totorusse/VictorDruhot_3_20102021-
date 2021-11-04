@@ -35,7 +35,7 @@
 }
 
 .fonctionnement-etiquette2 {
-  @include fonctionnement-etiquette($color: $gris-dark, $percent: 5%);
+  @include fonctionnement-etiquette($color: $gris-dark, $percent: 3%);
   &-contenu {
     position: relative;
   }
@@ -114,12 +114,29 @@
     padding: 10px 15px;
     line-height: 25px;
   }
-  &__coeur {
+  &--animation-coeur {
     position: absolute;
     right: 25px;
     bottom: 30px;
+    &:hover {
+      .restaurant__coeur-vide {
+        display: none;
+      }
+      .restaurant__coeur-plein {
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+      }
+    }
+  }
+  &__coeur-vide {
     font-size: 25px;
   }
+
+  &__coeur-plein {
+    font-size: 25px;
+    opacity: 0;
+  }
+
   &__flexbox {
     @include flexbox;
   }
@@ -147,11 +164,22 @@
   bottom: 50px;
   margin-bottom: -50px;
   @include padding-bloc;
-  &__coeur {
+  &--animation-coeur {
     position: absolute;
-    left: 400px;
-    top: 50px;
-    font-size: 25px;
+    top: 42px;
+    left: 380px;
+    &:hover {
+      .menu__coeur-vide {
+        display: none;
+      }
+      .menu__coeur-plein {
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+      }
+    }
+  }
+  &__coeur-plein {
+    opacity: 0;
   }
   &__etiquette {
     @include menu-etiquette;
@@ -212,19 +240,19 @@
     &1 {
       animation: apparition 800ms linear;
       -webkit-animation: apparition 800ms linear;
-}
+    }
     &2 {
       animation: apparition 800ms linear 100ms;
       -webkit-animation: apparition 800ms linear 100ms;
-}
+    }
     &3 {
       animation: apparition 800ms linear 200ms;
       -webkit-animation: apparition 800ms linear 200ms;
-}
+    }
     &4 {
       animation: apparition 800ms linear 300ms;
       -webkit-animation: apparition 800ms linear 300ms;
-}
+    }
   }
 }
 
