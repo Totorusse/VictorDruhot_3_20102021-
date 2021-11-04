@@ -21,146 +21,151 @@
     </header>
 
     <div class="main">
-      <!--Début du main : englobe tout sauf header et footer-->
+      <div class="spinner"></div>
 
-      <form class="recherche">
-        <label class="recherche__pin"><i class="fas fa-map-marker-alt"></i></label>
-        <input type="text" id="ville" placeholder="Paris, Belleville" />
-      </form>
+      <div class="main--animation">
+        <!--Début du main : englobe tout sauf header et footer-->
 
-      <!--FIN de la partie recherche-->
+        <form class="recherche">
+          <label class="recherche__pin"><i class="fas fa-map-marker-alt"></i></label>
+          <input type="text" id="ville" placeholder="Paris, Belleville" />
+        </form>
 
-      <div class="explore">
-        <h2 class="explore__titre">Réserver le menu qui vous convient</h2>
-        <p class="explore__texte">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <div class="bouton-explorer">
-          <button class="bouton-explorer__btn bouton-explorer__btn--round bouton-explorer__btn--gradient">
-            Explorer nos restaurants
-          </button>
+        <!--FIN de la partie recherche-->
+
+        <div class="explore">
+          <h2 class="explore__titre">Réserver le menu qui vous convient</h2>
+          <p class="explore__texte">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+          <div class="bouton-explorer">
+            <button class="bouton-explorer__btn bouton-explorer__btn--round bouton-explorer__btn--gradient">
+              Explorer nos restaurants
+            </button>
+          </div>
         </div>
+
+        <!--FIN de la partie explore-->
+        <!--Début de la partie fonctionnement-->
+
+        <section class="fonctionnement">
+          <h2 class="fonctionnement__titre">Fonctionnement</h2>
+          <div class="fonctionnement__flexbox">
+            <div class="fonctionnement-etiquette1">
+              <div class="fonctionnement-etiquette1-contenu">
+                <div class="fonctionnement-etiquette1__number">1</div>
+                <div class="fonctionnement-etiquette1__icon"><i class="fas fa-mobile-alt"></i></div>
+                <div class="fonctionnement-etiquette1__text">Choisissez un restaurant</div>
+              </div>
+            </div>
+
+            <div class="fonctionnement-etiquette2">
+              <div class="fonctionnement-etiquette2-contenu">
+                <div class="fonctionnement-etiquette2__number">2</div>
+                <div class="fonctionnement-etiquette2__icon">
+                  <i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>
+                </div>
+                <div class="fonctionnement-etiquette2__text">Composez votre menu</div>
+              </div>
+            </div>
+
+            <div class="fonctionnement-etiquette3">
+              <div class="fonctionnement-etiquette3-contenu">
+                <div class="fonctionnement-etiquette3__number">3</div>
+                <div class="fonctionnement-etiquette3__icon"><i class="fas fa-store"></i></div>
+                <div class="fonctionnement-etiquette3__text">Dégustez au restaurant</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--FIN de la partie fonctionnement-->
+        <!--Début de la partie restaurant-->
+
+        <section class="restaurant">
+          <h2 class="restaurant__titre">Restaurants</h2>
+
+          <div class="restaurant__flexbox">
+            <a class="restaurant__lien" href="palette.html">
+              <div class="restaurant__etiquette">
+                <img
+                  class="restaurant__image restaurant__image--position1"
+                  src="images/restaurants/palette.jpg"
+                  alt="image"
+                />
+                <span class="restaurant__nouveau">Nouveau</span>
+                <div class="restaurant__text">
+                  <h3>La palette du goût</h3>
+                  <p>Ménilmontant</p>
+                </div>
+                <div class="restaurant--animation-coeur">
+                  <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
+                  <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="restaurant__lien" href="note.html">
+              <div class="restaurant__etiquette">
+                <img
+                  class="restaurant__image restaurant__image--position2"
+                  src="images/restaurants/note.jpg"
+                  alt="image"
+                />
+                <span class="restaurant__nouveau">Nouveau</span>
+                <div class="restaurant__text">
+                  <h3>La note enchantée</h3>
+                  <p>Charonne</p>
+                </div>
+                <div class="restaurant--animation-coeur">
+                  <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
+                  <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--Fin div flexbox 2 premieres etiquette-->
+          <div class="restaurant__flexbox">
+            <a class="restaurant__lien" href="fran.html">
+              <div class="restaurant__etiquette">
+                <img
+                  class="restaurant__image restaurant__image--position3"
+                  src="images/restaurants/fran.jpg"
+                  alt="image"
+                />
+                <div class="restaurant__text">
+                  <h3>&#192; la française</h3>
+                  <p>Cité Rouge</p>
+                </div>
+                <div class="restaurant--animation-coeur">
+                  <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
+                  <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
+                </div>
+              </div>
+            </a>
+
+            <a class="restaurant__lien" href="sens.html">
+              <div class="restaurant__etiquette">
+                <img
+                  class="restaurant__image restaurant__image--position4"
+                  src="images/restaurants/sens.jpg"
+                  alt="image"
+                />
+                <div class="restaurant__text">
+                  <h3>Le délice des sens</h3>
+                  <p>Folie-Méricourt</p>
+                </div>
+                <div class="restaurant--animation-coeur">
+                  <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
+                  <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!--Fin div flexbox-->
+        </section>
+        <!--Fin de la partie restaurant-->
       </div>
-
-      <!--FIN de la partie explore-->
-      <!--Début de la partie fonctionnement-->
-
-      <section class="fonctionnement">
-        <h2 class="fonctionnement__titre">Fonctionnement</h2>
-        <div class="fonctionnement__flexbox">
-          <div class="fonctionnement-etiquette1">
-            <div class="fonctionnement-etiquette1-contenu">
-              <div class="fonctionnement-etiquette1__number">1</div>
-              <div class="fonctionnement-etiquette1__icon"><i class="fas fa-mobile-alt"></i></div>
-              <div class="fonctionnement-etiquette1__text">Choisissez un restaurant</div>
-            </div>
-          </div>
-
-          <div class="fonctionnement-etiquette2">
-            <div class="fonctionnement-etiquette2-contenu">
-              <div class="fonctionnement-etiquette2__number">2</div>
-              <div class="fonctionnement-etiquette2__icon">
-                <i class="fas fa-ellipsis-v"></i><i class="fas fa-bars"></i>
-              </div>
-              <div class="fonctionnement-etiquette2__text">Composez votre menu</div>
-            </div>
-          </div>
-
-          <div class="fonctionnement-etiquette3">
-            <div class="fonctionnement-etiquette3-contenu">
-              <div class="fonctionnement-etiquette3__number">3</div>
-              <div class="fonctionnement-etiquette3__icon"><i class="fas fa-store"></i></div>
-              <div class="fonctionnement-etiquette3__text">Dégustez au restaurant</div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--FIN de la partie fonctionnement-->
-      <!--Début de la partie restaurant-->
-
-      <section class="restaurant">
-        <h2 class="restaurant__titre">Restaurants</h2>
-
-        <div class="restaurant__flexbox">
-          <a class="restaurant__lien" href="palette.html">
-            <div class="restaurant__etiquette">
-              <img
-                class="restaurant__image restaurant__image--position1"
-                src="images/restaurants/palette.jpg"
-                alt="image"
-              />
-              <span class="restaurant__nouveau">Nouveau</span>
-              <div class="restaurant__text">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-              <div class="restaurant--animation-coeur">
-                <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
-                <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a class="restaurant__lien" href="note.html">
-            <div class="restaurant__etiquette">
-              <img
-                class="restaurant__image restaurant__image--position2"
-                src="images/restaurants/note.jpg"
-                alt="image"
-              />
-              <span class="restaurant__nouveau">Nouveau</span>
-              <div class="restaurant__text">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-              </div>
-              <div class="restaurant--animation-coeur">
-                <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
-                <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--Fin div flexbox 2 premieres etiquette-->
-        <div class="restaurant__flexbox">
-          <a class="restaurant__lien" href="fran.html">
-            <div class="restaurant__etiquette">
-              <img
-                class="restaurant__image restaurant__image--position3"
-                src="images/restaurants/fran.jpg"
-                alt="image"
-              />
-              <div class="restaurant__text">
-                <h3>&#192; la française</h3>
-                <p>Cité Rouge</p>
-              </div>
-              <div class="restaurant--animation-coeur">
-                <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
-                <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
-              </div>
-            </div>
-          </a>
-
-          <a class="restaurant__lien" href="sens.html">
-            <div class="restaurant__etiquette">
-              <img
-                class="restaurant__image restaurant__image--position4"
-                src="images/restaurants/sens.jpg"
-                alt="image"
-              />
-              <div class="restaurant__text">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-              <div class="restaurant--animation-coeur">
-                <span class="restaurant__coeur-plein"><i class="fas fa-heart"></i></span>
-                <span class="restaurant__coeur-vide"><i class="far fa-heart"></i></span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--Fin div flexbox-->
-      </section>
-      <!--Fin de la partie restaurant-->
+      <!--FIN du main-->
     </div>
-    <!--FIN du main-->
+    <!--FIN du main--animation-->
 
     <footer class="footer">
       <h2 class="footer__titre">ohmyfood</h2>

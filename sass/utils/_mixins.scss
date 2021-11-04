@@ -133,8 +133,8 @@
   }
 }
 
-@mixin flexbox {
-  //affichage en colonne du bloc pour petit écran et en ligne pour grand écran
+@mixin flexbox1 {
+  //affichage en colonne du bloc pour petit écran et en ligne pour grand écran ; space around
   display: flex;
   flex-direction: column;
   position: relative;
@@ -142,6 +142,18 @@
   @media screen and (min-width: 992px) {
     flex-direction: row;
     justify-content: space-around;
+  }
+}
+
+@mixin flexbox2 {
+  //affichage en colonne du bloc pour petit écran et en ligne pour grand écran ; space around
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -208,5 +220,32 @@
     background: -webkit-linear-gradient($primary-color, $secondary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes loading {
+  //cache du main au chargement
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner {
+  //animation du loading-spinner
+  0% {
+    rotate: (-360deg);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    // border: solid $secondary-color;
   }
 }

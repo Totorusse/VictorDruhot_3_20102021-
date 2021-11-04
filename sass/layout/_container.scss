@@ -1,3 +1,25 @@
+.main--animation {
+  animation: loading 3s;
+  -webkit-animation: loading 3s;
+}
+
+.spinner {
+  position: absolute;
+  top: 40%;
+  left: calc(50% - 100px);
+  border: dashed;
+  border-color: $primary-color $secondary-color;
+  width: 200px;
+  height: 200px;
+  animation: spinner 3s forwards;
+  -webkit-animation: spinner 3s forwards;
+  border-radius: 200px;
+  -webkit-border-radius: 200px;
+  -moz-border-radius: 200px;
+  -ms-border-radius: 200px;
+  -o-border-radius: 200px;
+}
+
 .explore {
   background: $gris-light;
   @include center;
@@ -14,7 +36,7 @@
     @include padding-titre;
   }
   &__flexbox {
-    @include flexbox;
+    @include flexbox1;
   }
 }
 
@@ -138,7 +160,7 @@
   }
 
   &__flexbox {
-    @include flexbox;
+    @include flexbox1;
   }
 }
 
@@ -234,7 +256,7 @@
   }
 
   &-flexbox {
-    @include flexbox;
+    @include flexbox2;
   }
   &--apparition {
     &1 {
