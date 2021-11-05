@@ -10,5 +10,6 @@ body {
   box-sizing: border-box;
   max-width: 1200px;
   margin: auto;
-  border: solid $gris-light;
+  z-index: 1;
+  box-shadow: 0px 2px 1px grey;
 }

@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header header__logo-index--shadow">
       <a href="index.html"
         ><div class="header__bouton-retour"><i class="fas fa-arrow-left"></i></div
       ></a>
@@ -26,18 +26,24 @@
 
     <div class="main">
       <img class="main__image" src="images/restaurants/note.jpg" alt="image" />
+
       <div class="menu">
-        <h1>
-          La note enchantée
-          <div class="menu--animation-coeur">
-            <span class="menu__coeur-vide"><i class="far fa-heart"></i></span>
-            <span class="menu__coeur-plein"><i class="fas fa-heart"></i></span>
-          </div>
-        </h1>
+        <div class="menu__header">
+          <h1>
+            La note enchantée
+            <div class="menu--animation-coeur">
+              <span class="menu__coeur-vide"><i class="far fa-heart"></i></span>
+              <span class="menu__coeur-plein"><i class="fas fa-heart"></i></span>
+            </div>
+          </h1>
+        </div>
+
         <div class="menu-flexbox">
           <div class="entrees">
-            <h2 class="titre">Entrées</h2>
-            <div class="titre__underline"></div>
+            <div class="entrees__titre">
+              <h2 class="titre">Entrées</h2>
+              <div class="titre__underline"></div>
+            </div>
 
             <div class="menu--apparition1">
               <div class="menu__etiquette">
@@ -94,8 +100,10 @@
           <!--FIN Entrées-->
 
           <div class="plats">
-            <h2 class="titre">Plats</h2>
-            <div class="titre__underline"></div>
+            <div class="plats__titre">
+              <h2 class="titre">Plats</h2>
+              <div class="titre__underline"></div>
+            </div>
 
             <div class="menu--apparition1">
               <div class="menu__etiquette">
@@ -139,8 +147,10 @@
           <!--FIN Plats-->
 
           <div class="desserts">
-            <h2 class="titre">Desserts</h2>
-            <div class="titre__underline"></div>
+            <div class="desserts__titre">
+              <h2 class="titre">Desserts</h2>
+              <div class="titre__underline"></div>
+            </div>
 
             <div class="menu--apparition1">
               <div class="menu__etiquette">
@@ -195,16 +205,18 @@
     </div>
     <!--FIN du main-->
 
-    <footer class="footer">
-      <h2 class="footer__titre">ohmyfood</h2>
-      <ul class="footer__list">
-        <li><i class="footer__list__couverts fas fa-utensils"></i>Proposer un restaurant</li>
-        <li><i class="footer__list__mains fas fa-hands-helping"></i>Devenir partenaire</li>
-        <li class="footer__list-sans-puce">Mentions légales</li>
-        <li class="footer__list-sans-puce">
-          <a class="footer__list__lien" href="mailto:serviceclient@gmail.com" target="_blank">Contact</a>
-        </li>
-      </ul>
+    <footer class="footer__background--black">
+      <div class="footer">
+        <h2 class="footer__titre">ohmyfood</h2>
+        <ul class="footer__list">
+          <li><i class="footer__list__couverts fas fa-utensils"></i>Proposer un restaurant</li>
+          <li><i class="footer__list__mains fas fa-hands-helping"></i>Devenir partenaire</li>
+          <li class="footer__list-sans-puce">Mentions légales</li>
+          <li class="footer__list-sans-puce">
+            <a class="footer__list__lien" href="mailto:serviceclient@gmail.com" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
