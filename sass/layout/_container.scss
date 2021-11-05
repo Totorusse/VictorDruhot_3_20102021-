@@ -196,9 +196,11 @@
   @include shadow;
   @include padding-bloc;
   &__header {
+    height: 50px;
+    max-width: 450px;
+
     @media screen and (max-width: 992px) {
       width: 100%;
-      max-width: 450px;
       margin: auto;
     }
   }
@@ -207,11 +209,9 @@
     font-size: 33px;
     display: inline-block;
     position: relative;
-    left: 70px;
-    &-francaise {
-      position: relative;
-      left: 140px;
-    }
+    left: 90%;
+    bottom: 38px;
+
     &:hover {
       .menu__coeur-vide {
         display: none;
