@@ -20,7 +20,9 @@
   @media screen and (min-width: 992px) {
     display: inline-block;
   }
-
+  &-index {
+    max-width: 500px;
+  }
   &__titre {
     margin-bottom: 10px;
   }

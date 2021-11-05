@@ -20,6 +20,18 @@
   -o-border-radius: 200px;
 }
 
+.main {
+  background-color: $gris-light;
+  margin-top: 70px;
+  &__image {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    max-width: 500px;
+  }
+}
+
 .explore {
   background: $gris-light;
   @include center;
@@ -92,8 +104,15 @@
 .restaurant {
   @include padding-bloc;
   background: $gris-light;
+  &--centrage {
+    @media screen and (max-width: 992px) {
+      margin: auto;
+      max-width: 500px;
+    }
+  }
   &__titre {
     @include padding-titre;
+    margin-bottom: 15px;
   }
   &__lien {
     @include lien--sans-decoration;
@@ -169,18 +188,6 @@
   }
 }
 
-.main {
-  background-color: $gris-light;
-  margin-top: 70px;
-  &__image {
-    display: block;
-    width: 100%;
-    margin: auto;
-    height: 250px;
-    max-width: 500px;
-  }
-}
-
 .menu {
   background-color: $gris-light;
   position: relative;
@@ -200,10 +207,10 @@
     font-size: 33px;
     display: inline-block;
     position: relative;
-    left: 85px;
-    &-francaise{
-    position: relative;
-    left: 140px;
+    left: 70px;
+    &-francaise {
+      position: relative;
+      left: 140px;
     }
     &:hover {
       .menu__coeur-vide {

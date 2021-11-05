@@ -243,6 +243,18 @@ footer h2 {
   -o-border-radius: 200px;
 }
 
+.main {
+  background-color: #fafafa;
+  margin-top: 70px;
+}
+.main__image {
+  display: block;
+  width: 100%;
+  margin: auto;
+  height: 250px;
+  max-width: 500px;
+}
+
 .explore {
   background: #fafafa;
   text-align: center;
@@ -411,8 +423,15 @@ footer h2 {
   padding: 40px 15px;
   background: #fafafa;
 }
+@media screen and (max-width: 992px) {
+  .restaurant--centrage {
+    margin: auto;
+    max-width: 500px;
+  }
+}
 .restaurant__titre {
   padding-bottom: 10px;
+  margin-bottom: 15px;
 }
 .restaurant__lien {
   color: black;
@@ -507,18 +526,6 @@ footer h2 {
   }
 }
 
-.main {
-  background-color: #fafafa;
-  margin-top: 70px;
-}
-.main__image {
-  display: block;
-  width: 100%;
-  margin: auto;
-  height: 250px;
-  max-width: 500px;
-}
-
 .menu {
   background-color: #fafafa;
   position: relative;
@@ -543,7 +550,7 @@ footer h2 {
   font-size: 33px;
   display: inline-block;
   position: relative;
-  left: 85px;
+  left: 70px;
 }
 .menu--animation-coeur-francaise {
   position: relative;
@@ -720,6 +727,9 @@ input[placeholder] {
   .footer {
     display: inline-block;
   }
+}
+.footer-index {
+  max-width: 500px;
 }
 .footer__titre {
   margin-bottom: 10px;
