@@ -48,6 +48,11 @@
     -webkit-text-fill-color: transparent;
   }
 }
+@keyframes disparition-coeur {
+  to {
+    color: red;
+  }
+}
 @keyframes loading {
   0% {
     opacity: 0;
@@ -88,6 +93,11 @@ body {
   margin: auto;
   z-index: 1;
   box-shadow: 0px 2px 1px grey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 body {
@@ -504,12 +514,12 @@ footer h2 {
   right: 25px;
   bottom: 30px;
 }
-.restaurant--animation-coeur:hover .restaurant__coeur-vide {
+.restaurant--animation-coeur:active .restaurant__coeur-vide {
   display: none;
 }
-.restaurant--animation-coeur:hover .restaurant__coeur-plein {
-  animation: remplissage-coeur 1500ms forwards;
-  -webkit-animation: remplissage-coeur 1500ms forwards;
+.restaurant--animation-coeur:active .restaurant__coeur-plein {
+  animation: remplissage-coeur 300ms forwards;
+  -webkit-animation: remplissage-coeur 300ms forwards;
 }
 .restaurant__coeur-vide {
   font-size: 25px;
@@ -560,12 +570,12 @@ footer h2 {
   left: 90%;
   bottom: 38px;
 }
-.menu--animation-coeur:hover .menu__coeur-vide {
+.menu--animation-coeur:active .menu__coeur-vide {
   display: none;
 }
-.menu--animation-coeur:hover .menu__coeur-plein {
-  animation: remplissage-coeur 1500ms forwards;
-  -webkit-animation: remplissage-coeur 1500ms forwards;
+.menu--animation-coeur:active .menu__coeur-plein {
+  animation: remplissage-coeur 300ms forwards;
+  -webkit-animation: remplissage-coeur 300ms forwards;
 }
 .menu__coeur-plein {
   opacity: 0;
