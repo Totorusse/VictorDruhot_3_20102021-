@@ -223,6 +223,15 @@
   }
 }
 
+@keyframes disparition-coeur {
+  //remplissage de coeur plein au survol
+  from {
+  }
+  to {
+    color: red;
+  }
+}
+
 @keyframes loading {
   //cache du main au chargement
   0% {
@@ -244,7 +253,7 @@
     -moz-transform: rotate(-360deg);
     -ms-transform: rotate(-360deg);
     -o-transform: rotate(-360deg);
-}
+  }
   90% {
     opacity: 1;
   }

@@ -164,13 +164,13 @@
     position: absolute;
     right: 25px;
     bottom: 30px;
-    &:hover {
+    &:active {
       .restaurant__coeur-vide {
         display: none;
       }
       .restaurant__coeur-plein {
-        animation: remplissage-coeur 1500ms forwards;
-        -webkit-animation: remplissage-coeur 1500ms forwards;
+        animation: remplissage-coeur 300ms forwards;
+        -webkit-animation: remplissage-coeur 300ms forwards;
       }
     }
   }
@@ -212,13 +212,13 @@
     left: 90%;
     bottom: 38px;
 
-    &:hover {
+    &:active {
       .menu__coeur-vide {
         display: none;
       }
       .menu__coeur-plein {
-        animation: remplissage-coeur 1500ms forwards;
-        -webkit-animation: remplissage-coeur 1500ms forwards;
+        animation: remplissage-coeur 300ms forwards;
+        -webkit-animation: remplissage-coeur 300ms forwards;
       }
     }
   }
