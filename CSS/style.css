@@ -673,6 +673,14 @@ footer h2 {
   animation: position-prix 500ms forwards;
   -webkit-animation: position-prix 500ms forwards;
 }
+.menu__etiquette:not(:active) .menu--animation {
+  animation: largeur--retour 500ms forwards;
+  -webkit-animation: largeur--retour 500ms forwards;
+}
+.menu__etiquette:not(:active) .menu__prix {
+  animation: position-prix--retour 500ms forwards;
+  -webkit-animation: position-prix--retour 500ms forwards;
+}
 .menu__prix {
   position: absolute;
   top: 60%;
