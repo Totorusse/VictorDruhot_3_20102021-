@@ -164,14 +164,25 @@
     position: absolute;
     right: 25px;
     bottom: 30px;
+    cursor: pointer;
+
     &:active {
       .restaurant__coeur-vide {
         display: none;
       }
       .restaurant__coeur-plein {
-        animation: remplissage-coeur 300ms forwards;
-        -webkit-animation: remplissage-coeur 300ms forwards;
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+}
+    }
+    &:hover {
+      .restaurant__coeur-vide {
+        display: none;
       }
+      .restaurant__coeur-plein {
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+}
     }
   }
   &__coeur-vide {
@@ -211,15 +222,25 @@
     position: relative;
     left: 90%;
     bottom: 38px;
+    cursor: pointer;
 
     &:active {
       .menu__coeur-vide {
         display: none;
       }
       .menu__coeur-plein {
-        animation: remplissage-coeur 300ms forwards;
-        -webkit-animation: remplissage-coeur 300ms forwards;
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+}
+    }
+    &:hover {
+      .menu__coeur-vide {
+        display: none;
       }
+      .menu__coeur-plein {
+        animation: remplissage-coeur 1500ms forwards;
+        -webkit-animation: remplissage-coeur 1500ms forwards;
+}
     }
   }
   &__coeur-plein {
