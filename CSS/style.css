@@ -513,13 +513,21 @@ footer h2 {
   position: absolute;
   right: 25px;
   bottom: 30px;
+  cursor: pointer;
 }
 .restaurant--animation-coeur:active .restaurant__coeur-vide {
   display: none;
 }
 .restaurant--animation-coeur:active .restaurant__coeur-plein {
-  animation: remplissage-coeur 300ms forwards;
-  -webkit-animation: remplissage-coeur 300ms forwards;
+  animation: remplissage-coeur 1500ms forwards;
+  -webkit-animation: remplissage-coeur 1500ms forwards;
+}
+.restaurant--animation-coeur:hover .restaurant__coeur-vide {
+  display: none;
+}
+.restaurant--animation-coeur:hover .restaurant__coeur-plein {
+  animation: remplissage-coeur 1500ms forwards;
+  -webkit-animation: remplissage-coeur 1500ms forwards;
 }
 .restaurant__coeur-vide {
   font-size: 25px;
@@ -569,13 +577,21 @@ footer h2 {
   position: relative;
   left: 90%;
   bottom: 38px;
+  cursor: pointer;
 }
 .menu--animation-coeur:active .menu__coeur-vide {
   display: none;
 }
 .menu--animation-coeur:active .menu__coeur-plein {
-  animation: remplissage-coeur 300ms forwards;
-  -webkit-animation: remplissage-coeur 300ms forwards;
+  animation: remplissage-coeur 1500ms forwards;
+  -webkit-animation: remplissage-coeur 1500ms forwards;
+}
+.menu--animation-coeur:hover .menu__coeur-vide {
+  display: none;
+}
+.menu--animation-coeur:hover .menu__coeur-plein {
+  animation: remplissage-coeur 1500ms forwards;
+  -webkit-animation: remplissage-coeur 1500ms forwards;
 }
 .menu__coeur-plein {
   opacity: 0;
